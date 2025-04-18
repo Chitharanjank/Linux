@@ -79,7 +79,6 @@ sudo chown username file.txt
 ```bash
 sudo chown username:groupname file.txt
 ```
-``
 
 ### Check last login of all users
 ```bash
