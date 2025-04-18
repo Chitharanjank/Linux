@@ -1,4 +1,4 @@
-**very basic and commonly used Linux commands**
+# very basic and commonly used Linux commands
 
 ### Create a directory
 ```bash
@@ -93,6 +93,16 @@ ls -l > files.txt
 ### Append command output to a file
 ```bash
 ls -l >> files.txt
+```
+
+### View output and save to file at the same time
+```bash
+ls -l | tee output.txt
+```
+
+### Append command output to file
+```bash
+ls -l | tee -a output.txt
 ```
 
 ### Show current directory path
