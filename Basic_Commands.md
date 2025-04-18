@@ -1,16 +1,20 @@
 # Basic Linux Commands
 
-## 📂 Print Working Directory
+## Print Working Directory
 ```bash
 pwd
+```
 
+## List files in the current directory
+```bash
 ls
-# List files in the current directory
-
-ls -l
+```
 # Long format listing with permissions
-
-ls -a
+```bash
+ls -l
+```
 # Includes hidden files
-
+```bash
+ls -a
+```
 
