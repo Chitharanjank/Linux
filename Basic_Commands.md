@@ -1,4 +1,3 @@
-```md
 # Basic Linux Commands
 
 ### Print Working Directory
@@ -174,5 +173,4 @@ sudo su
 ### Show Manual Page
 ```bash
 man command
-```
 ```
