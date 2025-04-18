@@ -1,8 +1,28 @@
-# Basic Linux Commands
+**very basic and commonly used Linux commands**
 
-### Print Working Directory
+### Create a directory
 ```bash
-pwd
+mkdir folder_name
+```
+
+### Create multiple directories at once
+```bash
+mkdir dir1 dir2 dir3
+```
+
+### Create a directory including parent directories
+```bash
+mkdir -p parent/child
+```
+
+### Create an empty file
+```bash
+touch filename.txt
+```
+
+### Create multiple files at once
+```bash
+touch file1.txt file2.txt file3.txt
 ```
 
 ### List files in the current directory
@@ -10,167 +30,111 @@ pwd
 ls
 ```
 
-### Long format listing with permissions
+### List files with detailed information
 ```bash
 ls -l
 ```
 
-### Includes hidden files
+### List files sorted by modification time (latest first)
+```bash
+ls -lt
+```
+
+### List files sorted by modification time (oldest first)
+```bash
+ls -ltr
+```
+
+### List all files including hidden ones
 ```bash
 ls -a
 ```
 
-### Change Directory
+### Open or create a file in Vim editor
 ```bash
-cd /path/to/directory
+vim filename.txt
 ```
 
-### Go to Home Directory
+### Display contents of a file
 ```bash
-cd ~
+cat filename.txt
 ```
 
-### Move One Level back
-```bash
-cd ..
-```
-
-### Create a Directory
-```bash
-mkdir folder_name
-```
-
-### Remove a File
-```bash
-rm filename
-```
-
-### Remove a Directory
-```bash
-rm -r folder_name
-```
-
-### Force Delete Directory
-```bash
-rm -rf folder_name
-```
-
-### Copy a File
-```bash
-cp source.txt destination.txt
-```
-
-### Copy a Directory
-```bash
-cp -r dir1 dir2
-```
-
-### Move or Rename File
-```bash
-mv oldname.txt newname.txt
-```
-
-### Create Empty File
-```bash
-touch newfile.txt
-```
-
-### View File Content
-```bash
-cat file.txt
-```
-
-### View File with Pager
-```bash
-less file.txt
-```
-
-### Show First 10 Lines of File
-```bash
-head file.txt
-```
-
-### Show Last 10 Lines of File
-```bash
-tail file.txt
-```
-
-### Follow File Output
-```bash
-tail -f file.txt
-```
-
-### Show Current Date and Time
+### Display current date and time
 ```bash
 date
 ```
 
-### Show Calendar
+### Display calendar
 ```bash
 cal
 ```
 
-### Show Current User
+### Display text in terminal
 ```bash
-whoami
+echo "Hello, World"
 ```
 
-### Clear the Terminal
+### Write text into a file (overwrites content)
 ```bash
-clear 
+echo "Hello" > file.txt
 ```
 
-### Show Disk Usage
+### Append text to a file
 ```bash
-df -h
+echo "More text" >> file.txt
 ```
 
-### Show Directory Size
+### Redirect command output to a file
 ```bash
-du -sh folder_name
+ls -l > files.txt
 ```
 
-### Show Memory Usage
+### Append command output to a file
 ```bash
-free -h
+ls -l >> files.txt
 ```
 
-### Show Active Processes
+### Show current directory path
 ```bash
-top
+pwd
 ```
 
-### Improved Process Viewer
+### Change to home directory
 ```bash
-htop
+cd
 ```
 
-### Kill Process by PID
+### Stay in the current directory (no change)
 ```bash
-kill 1234
+cd .
 ```
 
-### Kill All by Name
+### Go up one level back
 ```bash
-killall processname
+cd ..
 ```
 
-### Update Package Index
+### Go up two levels back
 ```bash
-sudo apt update
+cd ../..
 ```
 
-### Upgrade All Packages
+### List previously used commands
 ```bash
-sudo apt upgrade
+history
 ```
 
-### Switch to Root User
+### Run previous command using arrow keys  
+**⬆️ Press the up arrow key** in terminal to access previous commands
+
+### Search through command history  
+**Press Ctrl + R** and start typing a previous command
+
+### Clear the terminal screen
 ```bash
-sudo su
+clear
 ```
 
-### Show Manual Page
-```bash
-man command
-```
+### Shortcut to clear the terminal  
+**Press Ctrl + L** (same as `clear`)
