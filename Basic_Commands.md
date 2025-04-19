@@ -60,14 +60,29 @@ vim filename.txt
 cat filename.txt
 ```
 
-### Display current date and time
+### Show current directory path
 ```bash
-date
+pwd
 ```
 
-### Display calendar
+### Change to home directory
 ```bash
-cal
+cd
+```
+
+### Stay in the current directory (no change)
+```bash
+cd .
+```
+
+### Go up one level back
+```bash
+cd ..
+```
+
+### Go up two levels back
+```bash
+cd ../..
 ```
 
 ### Display text in terminal
@@ -105,29 +120,59 @@ ls -l | tee output.txt
 ls -l | tee -a output.txt
 ```
 
-### Show current directory path
+### Display current date and time
 ```bash
-pwd
+date
 ```
 
-### Change to home directory
+### Display calendar
 ```bash
-cd
+cal
 ```
 
-### Stay in the current directory (no change)
+### Show system uptime
 ```bash
-cd .
+uptime
 ```
 
-### Go up one level back
+### Show the current operating system
 ```bash
-cd ..
+cat /etc/os-release
 ```
 
-### Go up two levels back
+### Show system kernel and architecture info
 ```bash
-cd ../..
+uname -a
+```
+
+### Show available memory (RAM)
+```bash
+free -h
+```
+
+### Show disk space usage
+```bash
+df -h
+```
+
+### Show disk usage of a specific directory
+```bash
+du -sh /path/to/directory
+```
+
+### Check public IP address using curl
+```bash
+curl ifconfig.me
+```
+
+### Check private/local IP address
+```bash
+hostname -I
+```
+
+### Show CPU information
+```bash
+lscpu
 ```
 
 ### List previously used commands
