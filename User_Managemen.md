@@ -10,19 +10,19 @@ whoami
 id
 ```
 
-### List all logged-in users
-```bash
-who
-```
-
 ### Become root user
 ```bash
 sudo su -
 ```
 
-### Add a new user
+### Add a new user with home directory
 ```bash
-sudo adduser username
+sudo useradd -m username
+```
+
+### Add a new user without home directory
+```bash
+sudo useradd username
 ```
 
 ### Set password for a user
@@ -32,7 +32,7 @@ sudo passwd username
 
 ### Switch to another user (login shell)
 ```bash
-su - username
+su username
 ```
 
 ### Modify a user (e.g. change username)
@@ -45,16 +45,6 @@ sudo usermod -l newname oldname
 sudo userdel username
 ```
 
-### Show groups the current user belongs to
-```bash
-groups
-```
-
-### Show groups for a specific user
-```bash
-groups username
-```
-
 ### Create a new group
 ```bash
 sudo groupadd groupname
@@ -63,6 +53,11 @@ sudo groupadd groupname
 ### Add user to a group
 ```bash
 sudo usermod -aG groupname username
+```
+
+### Delete a user from group
+```bash
+sudo deluser username groupname
 ```
 
 ### Delete a group
@@ -78,16 +73,6 @@ sudo chown username file.txt
 ### Change file owner and group
 ```bash
 sudo chown username:groupname file.txt
-```
-
-### Check last login of all users
-```bash
-last
-```
-
-### Check last login for a specific user
-```bash
-last username
 ```
 
 ### Lock a user account
