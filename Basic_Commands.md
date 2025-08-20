@@ -15,6 +15,12 @@ mkdir dir1 dir2 dir3
 mkdir -p parent/child
 ```
 
+### creates a directory tree with multiple subdirectories
+
+```bash
+mkdir -p project/{src,bin,docs}
+```
+
 ### Create an empty file
 ```bash
 touch filename.txt
@@ -25,6 +31,18 @@ touch filename.txt
 touch file1.txt file2.txt file3.txt
 ```
 
+### Create a hidden file
+
+```bash
+touch .hiddenfile
+```
+
+### Create files with brace expansion
+
+```bash
+touch file{1..5}.log
+```
+
 ### List files in the current directory
 ```bash
 ls
@@ -33,6 +51,23 @@ ls
 ### List files with detailed information
 ```bash
 ls -l
+```
+
+### List files with human-readable sizes
+
+```bash
+ls -lh
+```
+
+### List files by file size (largest first)
+
+```bash
+ls -lhS
+```
+
+### List files by file size (smallest first)
+```bash
+ls -lhSr
 ```
 
 ### List files sorted by modification time (latest first)
@@ -50,6 +85,7 @@ ls -ltr
 ls -a
 ```
 
+
 ### Open or create a file in Vim editor
 ```bash
 vim filename.txt
@@ -58,6 +94,11 @@ vim filename.txt
 ### Display contents of a file
 ```bash
 cat filename.txt
+```
+
+### Display file with line numbers
+```bash
+cat -n filename.txt
 ```
 
 ### Show current directory path
