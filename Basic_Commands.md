@@ -211,6 +211,11 @@ du -sh /path/to/directory
 hostname -I
 ```
 
+### Check public IP address
+```bash
+curl ifconfig.me
+```
+
 ### Show CPU information
 ```bash
 lscpu
