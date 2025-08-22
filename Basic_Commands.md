@@ -21,6 +21,26 @@ mkdir -p parent/child
 mkdir -p project/{src,bin,docs}
 ```
 
+### Show current directory path
+```bash
+pwd
+```
+
+### Stay in the current directory (no change)
+```bash
+cd .
+```
+
+### Go up one level back
+```bash
+cd ..
+```
+
+### Go up two levels back
+```bash
+cd ../..
+```
+
 ### Create an empty file
 ```bash
 touch filename.txt
@@ -101,31 +121,6 @@ cat filename.txt
 cat -n filename.txt
 ```
 
-### Show current directory path
-```bash
-pwd
-```
-
-### Change to home directory
-```bash
-cd
-```
-
-### Stay in the current directory (no change)
-```bash
-cd .
-```
-
-### Go up one level back
-```bash
-cd ..
-```
-
-### Go up two levels back
-```bash
-cd ../..
-```
-
 ### Display text in terminal
 ```bash
 echo "Hello, World"
@@ -166,24 +161,9 @@ ls -l | tee -a output.txt
 date
 ```
 
-### Display calendar
-```bash
-cal
-```
-
-### Show system uptime
-```bash
-uptime
-```
-
 ### Show the current operating system
 ```bash
 cat /etc/os-release
-```
-
-### Show system kernel and architecture info
-```bash
-uname -a
 ```
 
 ### Show available memory (RAM)
@@ -199,11 +179,6 @@ df -h
 ### Show disk usage of a specific directory
 ```bash
 du -sh /path/to/directory
-```
-
-### Check public IP address using curl
-```bash
-curl ifconfig.me
 ```
 
 ### Check private/local IP address
