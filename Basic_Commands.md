@@ -72,6 +72,22 @@ touch .hiddenfile
 touch file{1..5}.log
 ```
 
+
+### Open or create a file in Vim editor
+```bash
+vim filename.txt
+```
+
+### Display contents of a file
+```bash
+cat filename.txt
+```
+
+### Display file with line numbers
+```bash
+cat -n filename.txt
+```
+
 ### Delete a single file
 ```bash
 rm filename.txt
@@ -128,22 +144,6 @@ ls -ltr
 ### List all files including hidden ones
 ```bash
 ls -a
-```
-
-
-### Open or create a file in Vim editor
-```bash
-vim filename.txt
-```
-
-### Display contents of a file
-```bash
-cat filename.txt
-```
-
-### Display file with line numbers
-```bash
-cat -n filename.txt
 ```
 
 ### Display text in terminal
