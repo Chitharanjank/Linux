@@ -41,6 +41,16 @@ cd ..
 cd ../..
 ```
 
+### Delete an empty directory
+```bash
+rmdir foldername
+```
+
+### Delete a directory with all its contents (files + subfolders)
+```bash
+rm -rf foldername
+```
+
 ### Create an empty file
 ```bash
 touch filename.txt
@@ -58,9 +68,24 @@ touch .hiddenfile
 ```
 
 ### Create files with brace expansion
-
 ```bash
 touch file{1..5}.log
+```
+
+### Delete a single file
+```bash
+rm filename.txt
+```
+
+### Delete multiple files
+```bash
+rm file1.txt file2.log file3.csv
+```
+
+### Delete all files of a type
+```bash
+rm *.txt
+rm *.log
 ```
 
 ### List files in the current directory
@@ -209,3 +234,7 @@ clear
 
 ### Shortcut to clear the terminal  
 **Press Ctrl + L** (same as `clear`)
+
+Got it 👍 Here are the basic **Linux commands to delete files and folders**:
+
+---
