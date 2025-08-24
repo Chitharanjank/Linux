@@ -20,11 +20,6 @@ sudo su -
 sudo useradd -m username
 ```
 
-### Add a new user without home directory
-```bash
-sudo useradd username
-```
-
 ### Set password for a user
 ```bash
 sudo passwd username
