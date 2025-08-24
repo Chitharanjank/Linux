@@ -30,11 +30,6 @@ sudo passwd username
 su username
 ```
 
-### Modify a user (e.g. change username)
-```bash
-sudo usermod -l newname oldname
-```
-
 ### Delete a user
 ```bash
 sudo userdel username
