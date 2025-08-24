@@ -47,7 +47,7 @@ sudo usermod -aG groupname username
 
 ### Delete a user from group
 ```bash
-sudo deluser username groupname
+sudo gpasswd -d chithu devops
 ```
 
 ### Delete a group
