@@ -221,15 +221,7 @@ echo "Files organized successfully!"
 
 Prints success message
 
-### UserMnagment script
-
-Concept	Used
-Variable	
-If condition	
-Arguments	
-Function	
-📄 Full Script: user_manager.sh
-
+### UserManagment script
 
 ```bash
 
