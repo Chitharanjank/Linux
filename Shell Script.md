@@ -249,9 +249,9 @@ usage() {
 check_user() {
     if id "$USERNAME" &>/dev/null
     then
-        echo "✅ User '$USERNAME' exists"
+        echo "User '$USERNAME' exists"
     else
-        echo "❌ User '$USERNAME' does NOT exist"
+        echo "User '$USERNAME' does NOT exist"
     fi
 }
 
@@ -262,7 +262,7 @@ user_info() {
         echo "User information:"
         id "$USERNAME"
     else
-        echo "❌ Cannot show info. User does not exist"
+        echo "Cannot show info. User does not exist"
     fi
 }
 
@@ -281,7 +281,7 @@ elif [ "$ACTION" == "info" ]
 then
     user_info
 else
-    echo "❌ Invalid action"
+    echo "Invalid action"
     usage
 fi
 ```
