@@ -1,5 +1,3 @@
----
-
 ## 1. What is a Shell Script?
 
 A **shell script** is a text file that contains a series of **Linux/Unix commands**.
@@ -222,4 +220,4 @@ echo "Files organized successfully!"
 ```
 
 Prints success message
----
+
