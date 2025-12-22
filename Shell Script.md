@@ -232,6 +232,8 @@ Function
 
 
 ```bash
+
+
 #!/bin/bash
 # -------- Variables --------
 USERNAME=$1
