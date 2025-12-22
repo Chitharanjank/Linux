@@ -221,3 +221,67 @@ echo "Files organized successfully!"
 
 Prints success message
 
+### UserMnagment script
+
+Concept	Used
+Variable	
+If condition	
+Arguments	
+Function	
+📄 Full Script: user_manager.sh
+
+
+```bash
+#!/bin/bash
+# -------- Variables --------
+USERNAME=$1
+ACTION=$2
+
+# -------- Function: show usage --------
+usage() {
+    echo "Usage: $0 <username> <action>"
+    echo "Actions:"
+    echo "  check  - Check if user exists"
+    echo "  info   - Show user ID info"
+}
+
+# -------- Function: check user --------
+check_user() {
+    if id "$USERNAME" &>/dev/null
+    then
+        echo "✅ User '$USERNAME' exists"
+    else
+        echo "❌ User '$USERNAME' does NOT exist"
+    fi
+}
+
+# -------- Function: user info --------
+user_info() {
+    if id "$USERNAME" &>/dev/null
+    then
+        echo "User information:"
+        id "$USERNAME"
+    else
+        echo "❌ Cannot show info. User does not exist"
+    fi
+}
+
+# -------- Argument validation --------
+if [ $# -ne 2 ]
+then
+    usage
+    exit 1
+fi
+
+# -------- Action handler --------
+if [ "$ACTION" == "check" ]
+then
+    check_user
+elif [ "$ACTION" == "info" ]
+then
+    user_info
+else
+    echo "❌ Invalid action"
+    usage
+fi
+```
