@@ -224,9 +224,9 @@ Prints success message
 ### UserManagment script
 
 ```bash
-
-
 #!/bin/bash
+
+
 # -------- Variables --------
 USERNAME=$1
 ACTION=$2
