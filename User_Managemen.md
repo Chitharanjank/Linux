@@ -20,6 +20,11 @@ sudo su -
 sudo useradd -m username
 ```
 
+### Create home directory automatically 
+```bash
+sudo mkhomedir_helper username
+```
+
 ### Set password for a user
 ```bash
 sudo passwd username
