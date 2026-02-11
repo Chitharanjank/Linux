@@ -104,6 +104,16 @@ rm *.txt
 rm *.log
 ```
 
+### Keep One Directory/File
+```bash
+rm -rf !(keepdir/file)
+```
+
+### Keep Multiple Directories/Files
+```bash
+rm -rf !(dir1|dir2|dir3)
+```
+
 ### List files in the current directory
 ```bash
 ls
