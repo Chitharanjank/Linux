@@ -90,7 +90,6 @@ sudo usermod -U username
 * Contains **password expiration info**
 * Only accessible by **root**
 
----
 
 ### View Shadow File (Root Only)
 
@@ -98,7 +97,6 @@ sudo usermod -U username
 sudo cat /etc/shadow
 ```
 
----
 
 ### Format of `/etc/shadow`
 
