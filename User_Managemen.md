@@ -79,3 +79,69 @@ sudo usermod -L username
 ```bash
 sudo usermod -U username
 ```
+
+---
+
+# 🔐 Understanding the Shadow File (Password & Account Status)
+
+## What is `/etc/shadow`?
+
+* Stores **encrypted passwords**
+* Contains **password expiration info**
+* Only accessible by **root**
+
+---
+
+## View Shadow File (Root Only)
+
+```bash
+sudo cat /etc/shadow
+```
+
+---
+
+## Format of `/etc/shadow`
+
+Example entry:
+
+```
+username:$6$abc123xyz$hashedpassword:19000:0:99999:7:::
+```
+
+It contains 9 fields separated by `:`
+
+```
+username:password:lastchg:min:max:warn:inactive:expire:reserved
+```
+
+---
+
+## 🔎 How to Check If Password is Set or Not
+
+### If password field contains:
+
+* `!!` → User has **no password set**
+* `!` at beginning → Account is **locked**
+* `$6$...` → Password is set (hashed)
+
+Example:
+
+```
+john:!!:...
+```
+
+👉 Password NOT set
+
+```
+john:!$6$abc123...
+```
+
+👉 Account LOCKED
+
+```
+john:$6$abc123...
+```
+
+👉 Password is SET and account is active
+
+---
