@@ -82,9 +82,9 @@ sudo usermod -U username
 
 ---
 
-# 🔐 Understanding the Shadow File (Password & Account Status)
+## Understanding the Shadow File (Password & Account Status)
 
-## What is `/etc/shadow`?
+### What is `/etc/shadow`?
 
 * Stores **encrypted passwords**
 * Contains **password expiration info**
@@ -92,7 +92,7 @@ sudo usermod -U username
 
 ---
 
-## View Shadow File (Root Only)
+### View Shadow File (Root Only)
 
 ```bash
 sudo cat /etc/shadow
@@ -100,7 +100,7 @@ sudo cat /etc/shadow
 
 ---
 
-## Format of `/etc/shadow`
+### Format of `/etc/shadow`
 
 Example entry:
 
@@ -116,7 +116,7 @@ username:password:lastchg:min:max:warn:inactive:expire:reserved
 
 ---
 
-## 🔎 How to Check If Password is Set or Not
+## How to Check If Password is Set or Not
 
 ### If password field contains:
 
