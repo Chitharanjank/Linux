@@ -250,6 +250,4 @@ clear
 ### Shortcut to clear the terminal  
 **Press Ctrl + L** (same as `clear`)
 
-Got it 👍 Here are the basic **Linux commands to delete files and folders**:
-
 ---
